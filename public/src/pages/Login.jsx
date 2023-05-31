@@ -25,7 +25,7 @@ function Login() {
         if (localStorage.getItem("chatty-user")) {
             navigate("/");
         }
-    }, []);
+    }, [navigate]);
     const handleSubmit = async (event) => {
         event.preventDefault();
         if (handleValidation()) {
